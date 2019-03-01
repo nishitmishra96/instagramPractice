@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M5k-8t-qx3">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Signup View Controller-->
+        <scene sceneID="GJU-fu-Mx5">
+            <objects>
+                <viewController id="M5k-8t-qx3" customClass="SignupViewController" customModule="testApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kCj-wX-aeQ" customClass="gradientView" customModule="testApp" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" alpha="0.089999999999999997" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2WP-bP-tgP">
+                                <rect key="frame" x="0.0" y="20" width="375" height="980"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="JNO-bE-Bl0">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="980"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tee-fL-etY">
+                                <rect key="frame" x="0.0" y="20" width="375" height="980"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zrs-Xo-24a">
+                                        <rect key="frame" x="8" y="8" width="359" height="964"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Signup to see photos and videos from you friends" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8dk-Lv-IEA">
+                                                <rect key="frame" x="20" y="92" width="319" height="41"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="41" id="cVb-aB-HUR"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <color key="textColor" red="0.57414853570000002" green="0.57416242360000003" blue="0.57415497299999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="y5L-dy-9Mn">
+                                                <rect key="frame" x="20" y="149" width="319" height="745"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R1Q-yg-QrO">
+                                                        <rect key="frame" x="0.0" y="0.0" width="319" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="APS-vt-YPK"/>
+                                                        </constraints>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Middle Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bDh-wo-SKP">
+                                                        <rect key="frame" x="0.0" y="47" width="319" height="40"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Xg-g7-6h4">
+                                                        <rect key="frame" x="0.0" y="94" width="319" height="40"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pqk-ap-F2w">
+                                                        <rect key="frame" x="0.0" y="141" width="319" height="40"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="DateOfBirth" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hnB-Gi-Bna">
+                                                        <rect key="frame" x="0.0" y="188" width="319" height="40"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Gender" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a6E-fm-S6p">
+                                                        <rect key="frame" x="0.0" y="235" width="319" height="40"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Country" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dFT-xF-MX8">
+                                                        <rect key="frame" x="0.0" y="282" width="319" height="40"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Father Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rJm-fr-PQC">
+                                                        <rect key="frame" x="0.0" y="329" width="319" height="40"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mother Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y1Z-cg-eA5">
+                                                        <rect key="frame" x="0.0" y="376" width="319" height="40"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Hometown" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BrX-La-0XO" customClass="sign">
+                                                        <rect key="frame" x="0.0" y="423" width="319" height="40"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yDi-CU-p2F">
+                                                        <rect key="frame" x="0.0" y="470" width="319" height="40"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nu0-mr-Owu">
+                                                        <rect key="frame" x="0.0" y="517" width="319" height="40"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone  Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gau-pz-qLm">
+                                                        <rect key="frame" x="0.0" y="564" width="319" height="40"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JdO-c5-5Zk">
+                                                        <rect key="frame" x="0.0" y="611" width="319" height="40"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Alternate email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S7Z-Ih-z6g">
+                                                        <rect key="frame" x="0.0" y="658" width="319" height="40"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DmC-O1-yvz" customClass="SignupButton" customModule="testApp" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="705" width="319" height="40"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="buttonPressed:" destination="M5k-8t-qx3" eventType="touchUpInside" id="Dmk-tR-Z0H"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1200px-Instagram_logo.svg" translatesAutoresizingMaskIntoConstraints="NO" id="Sq4-7H-QJN">
+                                                <rect key="frame" x="79" y="0.0" width="201" height="76"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="201" id="Bw4-e0-eJQ"/>
+                                                    <constraint firstAttribute="height" constant="76" id="uvO-WB-LSn"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="8dk-Lv-IEA" firstAttribute="width" secondItem="y5L-dy-9Mn" secondAttribute="width" id="0MY-lA-L7r"/>
+                                            <constraint firstAttribute="trailing" secondItem="y5L-dy-9Mn" secondAttribute="trailing" constant="20" id="RCv-JC-tL6"/>
+                                            <constraint firstItem="y5L-dy-9Mn" firstAttribute="leading" secondItem="zrs-Xo-24a" secondAttribute="leading" constant="20" id="S8D-75-kXK"/>
+                                            <constraint firstItem="y5L-dy-9Mn" firstAttribute="centerX" secondItem="zrs-Xo-24a" secondAttribute="centerX" id="Syz-H2-sVQ"/>
+                                            <constraint firstItem="y5L-dy-9Mn" firstAttribute="top" secondItem="8dk-Lv-IEA" secondAttribute="bottom" constant="16" id="T7b-WD-zfR"/>
+                                            <constraint firstAttribute="height" priority="900" constant="964" id="gVf-Bo-rDh"/>
+                                            <constraint firstItem="Sq4-7H-QJN" firstAttribute="centerX" secondItem="zrs-Xo-24a" secondAttribute="centerX" id="hFB-uj-aPM"/>
+                                            <constraint firstItem="Sq4-7H-QJN" firstAttribute="top" secondItem="zrs-Xo-24a" secondAttribute="top" id="i1x-QF-GZY"/>
+                                            <constraint firstItem="Sq4-7H-QJN" firstAttribute="centerX" secondItem="zrs-Xo-24a" secondAttribute="centerX" id="icy-x3-XZB"/>
+                                            <constraint firstItem="8dk-Lv-IEA" firstAttribute="centerX" secondItem="zrs-Xo-24a" secondAttribute="centerX" id="wrF-ui-FcM"/>
+                                            <constraint firstItem="8dk-Lv-IEA" firstAttribute="top" secondItem="Sq4-7H-QJN" secondAttribute="bottom" constant="16" id="yU1-ec-Uje"/>
+                                            <constraint firstAttribute="width" constant="359" id="yUm-WE-z3g"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="zrs-Xo-24a" firstAttribute="leading" secondItem="Tee-fL-etY" secondAttribute="leading" constant="8" id="OYy-hm-cjh"/>
+                                    <constraint firstAttribute="trailing" secondItem="zrs-Xo-24a" secondAttribute="trailing" constant="8" id="WvF-Wl-R6Z"/>
+                                    <constraint firstAttribute="bottom" secondItem="zrs-Xo-24a" secondAttribute="bottom" constant="8" id="mYr-OK-0ET"/>
+                                    <constraint firstItem="zrs-Xo-24a" firstAttribute="top" secondItem="Tee-fL-etY" secondAttribute="top" constant="8" id="q4F-GI-OnK"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="W9E-tZ-fhH" firstAttribute="trailing" secondItem="2WP-bP-tgP" secondAttribute="trailing" id="54b-X9-B2d"/>
+                            <constraint firstItem="Tee-fL-etY" firstAttribute="leading" secondItem="W9E-tZ-fhH" secondAttribute="leading" id="9ls-dr-AiS"/>
+                            <constraint firstItem="2WP-bP-tgP" firstAttribute="top" secondItem="W9E-tZ-fhH" secondAttribute="top" id="Azs-kK-rgW"/>
+                            <constraint firstItem="Tee-fL-etY" firstAttribute="trailing" secondItem="W9E-tZ-fhH" secondAttribute="trailing" id="Dcn-I1-y5e"/>
+                            <constraint firstItem="Tee-fL-etY" firstAttribute="top" secondItem="W9E-tZ-fhH" secondAttribute="top" id="DdQ-B7-kwD"/>
+                            <constraint firstItem="2WP-bP-tgP" firstAttribute="leading" secondItem="W9E-tZ-fhH" secondAttribute="leading" id="RUw-by-zQb"/>
+                            <constraint firstItem="Tee-fL-etY" firstAttribute="bottom" secondItem="W9E-tZ-fhH" secondAttribute="bottom" id="Rdm-v7-CNk"/>
+                            <constraint firstItem="W9E-tZ-fhH" firstAttribute="bottom" secondItem="2WP-bP-tgP" secondAttribute="bottom" id="eF9-KZ-PPK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="W9E-tZ-fhH"/>
+                    </view>
+                    <size key="freeformSize" width="375" height="1000"/>
+                    <connections>
+                        <outlet property="Gender" destination="a6E-fm-S6p" id="bQZ-Ek-YBd"/>
+                        <outlet property="alternateemail" destination="S7Z-Ih-z6g" id="jnM-yd-YJe"/>
+                        <outlet property="confirmPassword" destination="Nu0-mr-Owu" id="gvC-zy-PtZ"/>
+                        <outlet property="country" destination="dFT-xF-MX8" id="fMx-T3-tu9"/>
+                        <outlet property="dateOfBirth" destination="hnB-Gi-Bna" id="dKh-AP-nfF"/>
+                        <outlet property="email" destination="JdO-c5-5Zk" id="qvQ-5G-Wm0"/>
+                        <outlet property="fatherName" destination="rJm-fr-PQC" id="H7L-Hh-LSz"/>
+                        <outlet property="firstName" destination="R1Q-yg-QrO" id="tgB-in-gXa"/>
+                        <outlet property="homeTown" destination="BrX-La-0XO" id="fKc-Iv-f2k"/>
+                        <outlet property="lastName" destination="6Xg-g7-6h4" id="CFD-cq-Osv"/>
+                        <outlet property="middleName" destination="bDh-wo-SKP" id="Un3-92-JF3"/>
+                        <outlet property="motherName" destination="y1Z-cg-eA5" id="l1k-6X-Ycr"/>
+                        <outlet property="password" destination="yDi-CU-p2F" id="T0k-Zb-uzN"/>
+                        <outlet property="phoneNumber" destination="Gau-pz-qLm" id="sBD-9b-enc"/>
+                        <outlet property="userName" destination="Pqk-ap-F2w" id="tfK-Tf-KLA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xct-Rl-I9F" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="79.200000000000003" y="-507.34632683658174"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1200px-Instagram_logo.svg" width="1200" height="429"/>
+    </resources>
+</document>
