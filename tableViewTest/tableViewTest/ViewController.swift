@@ -62,7 +62,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         tableview.register(UINib(nibName: "mycustomcell", bundle: nil),
         forCellReuseIdentifier: "cell")
         
-        self.getRequestAPICall(url: "https://jsonplaceholder.typicode.com/photos")
+        self.getRequestAPICall(url: "https://jsonplaceholder.typicode.com/photos?_start=5&_limit=9")
 
     }
     
