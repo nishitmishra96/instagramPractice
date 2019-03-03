@@ -3,7 +3,7 @@
 import UIKit
 
 class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
-    
+
     @IBOutlet weak var tbView: UITableView!
     let people = [("Nishit","Noida"),("Sachin","Bhuvneshwae"),("Vaibhav","Noida")]
     
@@ -47,17 +47,6 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
         else
         {
             return "videos"
-        }
-    }
-    
-    func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
-        if section == 0
-        {
-            return "peopleklsja"
-        }
-        else
-        {
-            return "videaslkdjklos"
         }
     }
 

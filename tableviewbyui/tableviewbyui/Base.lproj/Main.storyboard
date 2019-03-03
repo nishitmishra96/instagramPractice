@@ -36,8 +36,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="sakdj" destination="2Ri-el-EK2" id="9iy-3u-MXp"/>
-                        <outlet property="tbView" destination="2Ri-el-EK2" id="rqM-bA-tMx"/>
+                        <outlet property="tbView" destination="2Ri-el-EK2" id="WCy-SK-joK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
