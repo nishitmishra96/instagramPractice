@@ -24,13 +24,11 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
- //       print("called again",dataoftable.count)
         return dataoftable.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! mycustomcell
-        print("The count is \(dataoftable.count)")
         
         if dataoftable.count == 0 {
             print("no data")
@@ -51,10 +49,10 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         if(indexPath.row == dataoftable.count-1)
         {
+            print(indexPath.row,"HEY THIS IS THE VALUE OF INDEX PATH")
+            print(dataoftable.count,"HEY THIS IS THE VALUE OF dictionary count")
             viewDidLoad()
         }
-        
-        
     }
     override func viewDidLoad()
     {
