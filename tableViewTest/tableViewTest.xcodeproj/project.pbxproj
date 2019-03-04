@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A302F6A6222D118100855D90 /* viewimageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A302F6A5222D118100855D90 /* viewimageViewController.swift */; };
 		A3B126D2222A6F66000414AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B126D1222A6F66000414AA /* AppDelegate.swift */; };
 		A3B126D4222A6F66000414AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B126D3222A6F66000414AA /* ViewController.swift */; };
 		A3B126D7222A6F66000414AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3B126D5222A6F66000414AA /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		2912967774C649A6DB5BC776 /* Pods-tableViewTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tableViewTest.release.xcconfig"; path = "Target Support Files/Pods-tableViewTest/Pods-tableViewTest.release.xcconfig"; sourceTree = "<group>"; };
+		A302F6A5222D118100855D90 /* viewimageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewimageViewController.swift; sourceTree = "<group>"; };
 		A3B126CE222A6F66000414AA /* tableViewTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tableViewTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3B126D1222A6F66000414AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3B126D3222A6F66000414AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,7 +52,6 @@
 				C8A9B483F3364E9F3F9C47C2 /* Pods-tableViewTest.debug.xcconfig */,
 				2912967774C649A6DB5BC776 /* Pods-tableViewTest.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -83,6 +84,7 @@
 				A3B126DD222A6F67000414AA /* Info.plist */,
 				A3B126E3222A70BC000414AA /* mycustomcell.swift */,
 				A3B126E4222A70BC000414AA /* mycustomcell.xib */,
+				A302F6A5222D118100855D90 /* viewimageViewController.swift */,
 			);
 			path = tableViewTest;
 			sourceTree = "<group>";
@@ -219,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3B126D4222A6F66000414AA /* ViewController.swift in Sources */,
+				A302F6A6222D118100855D90 /* viewimageViewController.swift in Sources */,
 				A3B126E5222A70BC000414AA /* mycustomcell.swift in Sources */,
 				A3B126D2222A6F66000414AA /* AppDelegate.swift in Sources */,
 			);

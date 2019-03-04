@@ -36,6 +36,16 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         else
         {
             cell.lbl.text = dataoftable[indexPath.row]["title"] as! String
+            if let thumbnailUrl = dataoftable[indexPath.row]["thumbnailUrl"] as? String
+            {
+                Alamofire.request(thumbnailUrl).responseImage(completionHandler: { (response) in
+                    print(response)
+                    var thumbnailshape = response.result.value
+                    thumbnailshape = thumbnailshape?.af_imageRoundedIntoCircle()
+                    cell.img.image = thumbnailshape
+                }
+                )
+            }
 
         }
         
