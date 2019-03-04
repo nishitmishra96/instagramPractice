@@ -10,15 +10,19 @@ class viewimageViewController: UIViewController {
     @IBOutlet weak var idValue: UILabel!
     @IBOutlet weak var titleValue: UILabel!
     
-    var viewController = ViewController()
+    var idv = Int()
+    var ttlv =  String()
+    var albv = Int()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        titleValue.text = ttlv
+        idValue.text = String(idv)
+        albumIdValue.text = String(albv)
+        
 
         // Do any additional setup after loading the view.
-    }
-    func loaddata(indexPath: IndexPath) -> Void
-    {
-                albumIdkey.text = viewController.dataoftable[indexPath.row]["title"] as? String
     }
 }

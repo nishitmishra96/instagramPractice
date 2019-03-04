@@ -1,11 +1,3 @@
-//
-//  ViewController.swift
-//  tableViewTest
-//
-//  Created by Himanshu on 02/03/19.
-//  Copyright © 2019 craterzone. All rights reserved.
-//
-
 import UIKit
 import Alamofire
 import  AlamofireImage
@@ -17,7 +9,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     var thumbnailurlforscreen : String = ""
     var start = 0
     var limit = 10
-
+    
     var dataoftable : [[String: Any]] = [[String: Any]]()
     
     @IBOutlet weak var tableview: UITableView!
@@ -46,7 +38,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
                 }
                 )
             }
-
+            
         }
         
         return cell
@@ -54,9 +46,24 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-    //    performSegue(withIdentifier: "segue", sender: self)
+        //    performSegue(withIdentifier: "segue", sender: self)
         let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "viewimageViewController") as? viewimageViewController
         self.navigationController?.pushViewController(vc!, animated: true)
+        vc?.ttlv = dataoftable[indexPath.row]["title"] as! String
+        
+        vc?.idv = dataoftable[indexPath.row]["id"] as! Int
+        
+        vc?.albv = dataoftable[indexPath.row]["id"] as! Int
+        
+        if let url = dataoftable[indexPath.row]["url"] as? String
+        {
+            Alamofire.request(url).responseImage(completionHandler: { (response) in
+                print(response)
+                vc?.productimg.image = response.result.value
+            }
+            )
+        }
+        
         
     }
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
@@ -73,13 +80,13 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         tableview.delegate = self
         tableview.dataSource  = self
         tableview.register(UINib(nibName: "mycustomcell", bundle: nil),
-        forCellReuseIdentifier: "cell")
+                           forCellReuseIdentifier: "cell")
         
         let url = "https://jsonplaceholder.typicode.com/photos?_start=\(start)&_limit=\(limit)"
         
         self.getRequestAPICall(url: url)
         start = start + limit
-
+        
     }
     
     func getRequestAPICall(url: String)  {
@@ -89,10 +96,9 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
                     //        your json converted into Dictonary
                     
                     self.dataoftable.append(contentsOf: data)
-     //               print("the total number of items are \(data.count)")
+                    //               print("the total number of items are \(data.count)")
                     self.tableview.reloadData()
                 }
         }
     }
 }
-
