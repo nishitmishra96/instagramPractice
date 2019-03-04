@@ -17,6 +17,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y9d-qE-ZGs">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="G1I-Ol-s5s">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="prz-yh-X5o">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -38,10 +46,14 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Y9d-qE-ZGs" secondAttribute="bottom" id="4KO-ad-rbF"/>
                             <constraint firstItem="prz-yh-X5o" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="FKy-t4-6MM"/>
+                            <constraint firstItem="Y9d-qE-ZGs" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Q1D-qv-ocT"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="prz-yh-X5o" secondAttribute="trailing" id="SI2-kc-zEE"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="prz-yh-X5o" secondAttribute="bottom" id="Zpb-cT-X3T"/>
+                            <constraint firstItem="Y9d-qE-ZGs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="hbl-1D-QBJ"/>
                             <constraint firstItem="prz-yh-X5o" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="w73-E3-mln"/>
+                            <constraint firstItem="Y9d-qE-ZGs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xDM-dJ-yx6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -109,8 +121,22 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <visualEffectView opaque="NO" alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H2h-vf-vgC">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="YBs-Td-FSw">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="H2h-vf-vgC" firstAttribute="top" secondItem="qU6-7s-Ir5" secondAttribute="top" id="7y3-wE-hPC"/>
+                            <constraint firstItem="H2h-vf-vgC" firstAttribute="leading" secondItem="qU6-7s-Ir5" secondAttribute="leading" id="OXH-UV-2YS"/>
+                            <constraint firstItem="H2h-vf-vgC" firstAttribute="trailing" secondItem="qU6-7s-Ir5" secondAttribute="trailing" id="d12-A2-Wa0"/>
+                            <constraint firstItem="H2h-vf-vgC" firstAttribute="bottom" secondItem="qU6-7s-Ir5" secondAttribute="bottom" id="kbK-V7-Ohp"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="qU6-7s-Ir5"/>
                     </view>
                     <connections>
@@ -125,7 +151,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eNv-s9-ecb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2360.8000000000002" y="55.322338830584712"/>
+            <point key="canvasLocation" x="1596" y="0.0"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gWx-ne-eNg">
