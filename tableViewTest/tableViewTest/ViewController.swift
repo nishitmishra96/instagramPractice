@@ -15,6 +15,8 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     
     var cellforreload = mycustomcell()
     var thumbnailurlforscreen : String = ""
+    var start = 0
+    var limit = 10
 
     var dataoftable : [[String: Any]] = [[String: Any]]()
     
@@ -62,7 +64,10 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         tableview.register(UINib(nibName: "mycustomcell", bundle: nil),
         forCellReuseIdentifier: "cell")
         
-        self.getRequestAPICall(url: "https://jsonplaceholder.typicode.com/photos?_start=5&_limit=9")
+        let url = "https://jsonplaceholder.typicode.com/photos?_start=\(start)&_limit=\(limit)"
+        
+        self.getRequestAPICall(url: url)
+        start = start + limit
 
     }
     
