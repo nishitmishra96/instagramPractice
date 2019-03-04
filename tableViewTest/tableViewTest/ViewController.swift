@@ -3,7 +3,26 @@ import Alamofire
 import  AlamofireImage
 
 
+class SampleData {
+    var albumId : Int
+    var id : Int
+    var title : String
+    var url : String
+    var thumbnailURL : String
+    init(data:[String:Any] )
+    {        id = data["id"] as? Int ?? -1
+        albumId = data["albumId"] as? Int ?? -1
+        title = data["title"] as? String ?? ""
+        url = data["url"] as? String ?? ""
+        thumbnailURL = data["thumbnailURL"] as? String ?? ""
+        
+    }
+    
+}
+
 class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource{
+    
+    var dataClass = [SampleData]()
     
     var cellforreload = mycustomcell()
     var thumbnailurlforscreen : String = ""
@@ -45,6 +64,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+      
         
         //    performSegue(withIdentifier: "segue", sender: self)
         let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "viewimageViewController") as? viewimageViewController
@@ -97,6 +117,13 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
                     
                     self.dataoftable.append(contentsOf: data)
                     //               print("the total number of items are \(data.count)")
+
+               //     print(response.value)
+                    
+                    for (index, keyValue) in self.dataoftable.enumerated() {
+                        print("Dictionary key \(index) - Dictionary value \(keyValue)")
+                    }
+                
                     self.tableview.reloadData()
                 }
         }
