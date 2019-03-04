@@ -63,13 +63,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fqc-2l-OqT">
-                                <rect key="frame" x="35" y="617" width="34" height="30"/>
-                                <state key="normal" title="Back"/>
-                                <connections>
-                                    <segue destination="JuV-3S-zu3" kind="show" id="Jis-rf-idO"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8D1-Xj-hIo">
                                 <rect key="frame" x="56" y="448" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -118,10 +111,6 @@
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="qU6-7s-Ir5" firstAttribute="bottom" secondItem="Fqc-2l-OqT" secondAttribute="bottom" constant="20" id="nc5-Ws-qmb"/>
-                            <constraint firstItem="Fqc-2l-OqT" firstAttribute="leading" secondItem="qU6-7s-Ir5" secondAttribute="leading" constant="35" id="pHZ-wF-xUg"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="qU6-7s-Ir5"/>
                     </view>
                     <connections>
