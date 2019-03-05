@@ -13,16 +13,16 @@ class viewimageViewController: UIViewController {
     var idv = Int()
     var ttlv =  String()
     var albv = Int()
+    var image : UIImage?
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         titleValue.text = ttlv
         idValue.text = String(idv)
         albumIdValue.text = String(albv)
-        
-
+        productimg.image = image
         // Do any additional setup after loading the view.
     }
 }
